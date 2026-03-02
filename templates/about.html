@@ -1,0 +1,32 @@
+{% extends "base_layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <h1>About Us</h1>
+
+    <p>
+        MyArticles is a training project built with Django.
+        It demonstrates authentication, media uploads,
+        template inheritance and basic styling.
+    </p>
+
+    <div class="about-cards">
+        <div class="about-card">
+            <h2>🚀 Purpose</h2>
+            <p>Learning backend development with Django.</p>
+        </div>
+
+        <div class="about-card">
+            <h2>🛠 Technologies</h2>
+            <p>Django, HTML, CSS, SQLite.</p>
+        </div>
+
+        <div class="about-card">
+            <h2>🎯 Goal</h2>
+            <p>Create a clean, minimal article platform.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

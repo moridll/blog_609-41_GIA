@@ -1,0 +1,12 @@
+{% extends "base_layout.html" %}
+{% block title %}{{ article.title }}{% endblock title %}
+{% block content %}
+    <section class="auth-section">
+        <h1>Login</h1>
+        <form class="form" action="/accounts/login/" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit" class="btn-primary">Login</button>
+        </form>
+    </section>
+{% endblock content %}
