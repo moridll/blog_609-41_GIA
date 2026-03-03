@@ -20,10 +20,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 from mysite import views, settings
+from articles import views as article_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homepage, name='homepage'),
+    path('', article_views.article_list, name='homepage'),
     path('about/', views.about, kwargs={"company_name": "FooBar", "company_phone": 88005553535}, name='about'),
     path('articles/', include('articles.urls')),
     path('accounts/', include('accounts.urls')),

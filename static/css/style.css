@@ -307,3 +307,112 @@ a:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+/* ===============================
+   Create Button
+================================= */
+
+.create-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #1f4e79, #2563eb);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.create-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #2563eb, #1f4e79);
+}
+
+.create-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   Create Article Form
+================================= */
+
+.page-title {
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.article-form {
+    max-width: 600px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.article-form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.article-form label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.article-form input,
+.article-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.article-form input:focus,
+.article-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* File input */
+.article-form input[type="file"] {
+    padding: 6px;
+    border: none;
+}
+
+/* Submit button */
+
+.submit-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
